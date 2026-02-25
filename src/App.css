@@ -1,0 +1,144 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #355872;   /* DARK background */
+  color: #F7F8F0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #F7F8F0;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #7AAACE;
+  padding: 16px 24px;
+  border-radius: 18px;
+  color: #355872;
+  font-weight: 500;
+}
+
+/* Controls */
+.controls {
+  margin: 20px 0 30px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+select,
+input {
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: none;
+  background: #7AAACE;
+  color: #355872;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Cards grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+/* Card */
+.card {
+  background: #9CD5FF;
+  padding: 26px;
+  border-radius: 22px;
+  color: #000000;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #7AAACE;
+}
+
+/* Buttons */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 16px;
+  background-color: #355872;
+  color: #F7F8F0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #2c4a60;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Refresh button */
+.refresh-btn {
+  background-color: #355872;
+}
+
+/* Badges */
+.badge {
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+  color: #F7F8F0;
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.available {
+  background-color: #2E8B57;
+}
+
+.unavailable {
+  background-color: #c44536;
+}
+
+/* No data */
+.no-data {
+  font-weight: 600;
+  margin-top: 40px;
+  color: #F7F8F0;
+}
+
+/* Spinner */
+.spinner {
+  margin: 60px auto;
+  width: 55px;
+  height: 55px;
+  border: 6px solid #7AAACE;
+  border-top: 6px solid #F7F8F0;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
